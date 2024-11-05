@@ -2,6 +2,24 @@
 import java.util.*;
 public class Library extends Building {
     private Hashtable<String, Boolean> collection;
+    /**
+     * overloaded constructor with only address
+     * @param address
+     */
+    public Library(String address) {
+      super(address);
+      this.address = address;
+      this.nFloors = 1;
+      }
+    /** 
+     * overloaded constructor with name, address 
+    *@param name Name of the Cafe
+    * @param address Address of the Cafe
+    */
+    public Library(String name, String address) {
+        super(name,address);
+        this.nFloors = 1;
+    }
     private boolean hasElevator;
     /**
      * initializes building and collection
@@ -99,7 +117,7 @@ public class Library extends Building {
     public void showOptions(Object Library) {
       System.out.println("Available options at " + this.name + ":\n + addTitle(Str) \n + removeTitle(Str) \n + checkOut(Str) \n + returnBook(Str)\n + containsTitle(Str)\n + isAvailable(Str)");
     }
-    /** Keeps the person on floor one
+    /** 
      * @param floorNum the floor number to go to
      * @throws RuntimeException If customer asks to go to a different floor
      */

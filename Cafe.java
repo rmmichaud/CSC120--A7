@@ -6,7 +6,7 @@ public class Cafe extends Building {
     private int nCups;
  
     /**
-     * Overloaded constructor with adress
+     * Overloaded constructor with address
      * @param address Address of the Cafe
      */
     public Cafe(String address) {
@@ -68,7 +68,7 @@ public class Cafe extends Building {
          + String.valueOf(nCreams) + " creams, and " + String.valueOf(nSugarPackets) + " sugar packets remain in stock.");
     }
     /**
-     * 
+     * restocks different inventory items
      * @param nCoffeeOunces
      * @param nSugarPackets
      * @param nCreams
@@ -89,7 +89,8 @@ public class Cafe extends Building {
         }
     }
 
-   /** Keeps the person on floor one
+   /** 
+    * keeps the person on floor one
      * @param floorNum the floor number to go to
      * @throws RuntimeException If customer asks to go to a different floor
      */

@@ -108,7 +108,7 @@ public class House extends Building {
     }
   }
   /**
-   * If the House has an elevator it will go to that floor
+   * if the House has an elevator it will go to that floor
    * @param floorNum - the desired floor 
    * @throws RuntimeException If user asks to go to a different floor
    */
